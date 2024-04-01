@@ -1,0 +1,15 @@
+Create the program using Microsoft cognitive API for IoT
+
+1)	First, we need to create a Text Analytics service resource. The cognitive service in the container image will use this to report billing data too.
+
+2)	Select a resource group, and now we’ll fill in a name. Pick a pricing tier. We also need to agree to the responsible AI notice. Let’s create it.
+
+3)	In the Text Analytics service. To enable the container to send billing data to it, we need a couple of things. We need the API key from here and also the service endpoint.
+
+4)	Let’s create a container. We’ll do that using a Power Shell script in the Azure Cloud Shell. We can also use the Azure CLI for this. The scripts will create a new Azure App Service web app for containers, and it will create a container in there with this image. This is a cognitive service image for the Text Analytics health feature. We’ve also filled in the key and endpoint for the service in Azure.
+
+There it goes and we can find its URL in the web app for containers.
+
+5)	Let’s take a look. The health feature of the Text Analytics Service has a demo feature. Just add /demo to access it. Now, this feature analyzes text for health-related phrases like illness, treatment, and medication. Let’s try with a sentence. It identified these phrases with their meanings. It used the Cognitive Service that runs in a container, in the Web App for Containers.
+
+
